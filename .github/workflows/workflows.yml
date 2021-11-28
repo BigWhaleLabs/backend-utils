@@ -1,8 +1,8 @@
-name: Compile and lint code
+name: Compile and publish
 
 on:
-  pull_request:
-    types: [synchronize, opened]
+  release:
+    types: [created]
 
 jobs:
   compile-code:
@@ -10,9 +10,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install modules
-        run: yarn
-      - name: Compile code
-        run: yarn tsc --skipLibCheck
+        run: yarn --no-progress
       - name: Lint code
         run: yarn lint
+      - name: Compile code
+        run: yarn build
+      - name: Publish utils
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
