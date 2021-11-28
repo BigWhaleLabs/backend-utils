@@ -2,7 +2,7 @@ import { ClassConstructor } from 'class-transformer'
 import { Context, Next } from 'koa'
 import validate from '@/helpers/validate'
 
-export default function validateParamsMiddleware<T extends object>(
+export function validateParamsMiddleware<T extends object>(
   classConstructor: ClassConstructor<T>
 ) {
   return (middleware: (ctx: Context, next: Next) => void) => {
@@ -12,3 +12,5 @@ export default function validateParamsMiddleware<T extends object>(
     }
   }
 }
+
+export default validateParamsMiddleware

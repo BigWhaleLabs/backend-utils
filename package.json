@@ -22,8 +22,7 @@
   },
   "scripts": {
     "release": "np --no-publish",
-    "distribute": "yarn build && node dist/index.js",
-    "develop": "tsc-watch --skipLibCheck --onSuccess \"node dist/index.js\"",
+    "start": "tsc-watch --skipLibCheck --onSuccess \"node dist/index.js\"",
     "build": "tsc --skipLibCheck",
     "test": "yarn jest --forceExit",
     "pretty": "prettier --check src",

@@ -83,7 +83,7 @@ function propertiesToParams(
   }))
 }
 
-function generateOpenApi(
+export function openApi(
   controllers: { [name: string]: Controller },
   info: {
     title: string
@@ -169,4 +169,4 @@ function generateOpenApi(
   }
 }
 
-export default generateOpenApi
+export default openApi

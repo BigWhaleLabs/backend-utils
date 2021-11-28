@@ -1,25 +1,23 @@
-# Backend starter code
+# Backend utils
 
-This repository is to be used as a starter for Koa based Node.js applications written in TypeScript and using MongoDB. It includes a range of nice packages and configurations. It also has a stub for user login via Telegram, Facebook and Google. Enjoy!
+## Installation
 
-## Installation and local launch
+`yarn add @big-whale-labs/backend-utils` or `npm i @big-whale-labs/backend-utils`
 
-1. Clone this repo: `git clone https://github.com/Borodutch/backend-starter`
-2. Launch the [mongo database](https://www.mongodb.com/) locally
-3. Create `.env` with the environment variables listed below
-4. Run `yarn` in the root folder
-5. Run `yarn develop`
+## Local launch
 
-And you should be good to go! Feel free to fork and submit pull requests.
+1. Install dependencies with `yarn`
+2. Run the server with `yarn start`
 
-## Environment variables
+## Development in conjunction with another project
 
-| Name                                     | Description                              |
-| ---------------------------------------- | ---------------------------------------- |
-| `MONGO`                                  | URL of the mongo database                |
-| `JWT`                                    | secret for JWT                           |
-| `FACEBOOK_APP_ID`, `FACEBOOK_APP_SECRET` | Facebook login credentials               |
-| `TELEGRAM_LOGIN_TOKEN`                   | Telegram login bot                       |
-| `PORT`                                   | Port to run server on (defaults to 1337) |
+1. Run `yarn link` in the root folder. [more about yarn link](https://classic.yarnpkg.com/en/docs/cli/link)
+2. Run develop mode with `yarn start`
+3. **In another project**. Run `yarn link @big-whale-labs/backend-utils`
+4. Nice! Your project will now use the local version of ` @big-whale-labs/backend-utils`
 
-Also, please, consider looking at `.env.sample`.
+## Available Scripts
+
+- `yarn start` — development mode
+- `yarn build` — builds utils
+- `yarn release` — create a release and publish the package using `ci`
