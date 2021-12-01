@@ -16,6 +16,16 @@
 3. **In another project**. Run `yarn link @big-whale-labs/backend-utils`
 4. Nice! Your project will now use the local version of ` @big-whale-labs/backend-utils`
 
+## Environment variables
+
+| Name    | Description                              |
+| ------- | ---------------------------------------- |
+| `MONGO` | URL of the mongo database                |
+| `JWT`   | secret for JWT                           |
+| `PORT`  | Port to run server on (defaults to 1337) |
+
+Also, please, consider looking at `.env.sample`.
+
 ## Available Scripts
 
 - `yarn start` — development mode
