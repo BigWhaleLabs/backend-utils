@@ -21,10 +21,10 @@
     "contents": "dist"
   },
   "scripts": {
-    "prebuild": "ts-patch install -s",
+    "prepare": "ts-patch install -s",
     "release": "np --no-publish",
     "start": "tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
-    "build": "tsc --skipLibCheck",
+    "build": "yarn prepare && tsc --skipLibCheck",
     "test": "yarn jest --forceExit",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
