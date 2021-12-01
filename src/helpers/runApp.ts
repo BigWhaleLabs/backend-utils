@@ -8,7 +8,7 @@ import { koaSwagger } from 'koa2-swagger-ui'
 import { openApi } from '@/helpers/openApi'
 import env from '@/helpers/env'
 
-export default async function runApp({ title }: { title: string }) {
+export async function runApp({ title }: { title: string }) {
   const app = new Koa()
   const router = new Router()
   await bootstrapControllers({
@@ -48,3 +48,5 @@ export default async function runApp({ title }: { title: string }) {
       .on('error', reject)
   })
 }
+
+export default runApp

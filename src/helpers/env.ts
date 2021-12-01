@@ -3,8 +3,10 @@ import { cleanEnv, num, str } from 'envalid'
 
 dotenv.config({ path: `${__dirname}/../../.env` })
 
-export default cleanEnv(process.env, {
+export const env = cleanEnv(process.env, {
   PORT: num({ default: 1337 }),
   JWT: str(),
   MONGO: str(),
 })
+
+export default env
