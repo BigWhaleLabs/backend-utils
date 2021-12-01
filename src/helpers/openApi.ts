@@ -83,6 +83,10 @@ function propertiesToParams(
   }))
 }
 
+export interface Controllers {
+  [name: string]: Controller
+}
+
 export function openApi(
   controllers: { [name: string]: Controller },
   info: {
