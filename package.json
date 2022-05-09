@@ -20,7 +20,7 @@
     "contents": "dist"
   },
   "scripts": {
-    "release": "np --no-publish",
+    "release": "np",
     "prepare": "ts-patch install -s",
     "develop": "yarn prepare && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
     "build": "yarn prepare && tsc --skipLibCheck",
