@@ -1,4 +1,4 @@
-name: Compile and publish
+name: Compile and lint code
 
 on:
   release:
@@ -20,7 +20,3 @@ jobs:
         run: yarn lint
       - name: Compile code
         run: yarn build
-      - name: Publish utils
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
