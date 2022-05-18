@@ -1,7 +1,7 @@
 {
   "name": "@big-whale-labs/backend-utils",
   "version": "0.0.14",
-  "description": "Backend utils used by BWL products ",
+  "description": "Backend utils used by BWL products",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {

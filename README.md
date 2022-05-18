@@ -20,4 +20,4 @@
 
 - `yarn start` — development mode
 - `yarn build` — builds utils
-- `yarn release` — create a release and publish the package using `ci`
+- `yarn release` — create a release and publish the package
