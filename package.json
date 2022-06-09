@@ -21,7 +21,7 @@
   "scripts": {
     "release": "np",
     "prepare": "ts-patch install -s",
-    "develop": "yarn prepare && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
+    "start": "yarn prepare && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
     "build": "yarn prepare && tsc --skipLibCheck",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src",
