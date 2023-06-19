@@ -32,8 +32,11 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "class-validator-jsonschema": "^3.1.1",
+    "crypto-js": "^4.1.1",
     "koa": "^2.13.4",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "react-native-quick-crypto": "^0.6.1",
+    "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
     "@types/koa": "^2.13.5",
