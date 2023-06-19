@@ -1,6 +1,6 @@
 import { ClassConstructor } from 'class-transformer'
 import { Context, Next } from 'koa'
-import validate from '@/helpers/validate'
+import validate from './validate'
 
 export function validateParamsMiddleware<T extends object>(
   classConstructor: ClassConstructor<T>
