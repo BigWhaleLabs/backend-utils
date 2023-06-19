@@ -46,7 +46,7 @@
     "@types/koa": "^2.13.5",
     "@types/node": "^18.11.9",
     "eslint": "^8.28.0",
-    "np": "^7.6.2",
+    "np": "^7.7.0",
     "prettier": "^2.8.0",
     "ts-patch": "^2.0.2",
     "tsc-watch": "^5.0.3",
@@ -56,5 +56,5 @@
   "_moduleAliases": {
     "@": "dist"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.6.0"
 }

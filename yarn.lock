@@ -49,7 +49,7 @@ __metadata:
     eslint: ^8.28.0
     koa: ^2.13.4
     module-alias: ^2.2.2
-    np: ^7.6.2
+    np: ^7.7.0
     prettier: ^2.8.0
     react-native-quick-crypto: ^0.6.1
     ts-patch: ^2.0.2
@@ -4818,9 +4818,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"np@npm:^7.6.2":
-  version: 7.6.2
-  resolution: "np@npm:7.6.2"
+"np@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "np@npm:7.7.0"
   dependencies:
     "@samverschueren/stream-to-observable": ^0.3.1
     any-observable: ^0.5.1
@@ -4863,7 +4863,7 @@ __metadata:
     update-notifier: ^5.0.1
   bin:
     np: source/cli.js
-  checksum: 736e7434e2fceeffa8fa805d6882dcda020ee882bfe8a0f4d39abaec7016fa9bf12e4daa42649dd21533caa3bfad6acdefe5cf8d7bf177699fa0aedff8083c04
+  checksum: 342b47d3b866a81686728758b1bd7507fde679af8df16f101bad6c01c59e555434d8badc59e6cdce5930e306a06a1db10380fe9ba836d1ae594bcfcfb79447a3
   languageName: node
   linkType: hard
 
@@ -6689,21 +6689,21 @@ __metadata:
 
 "typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
   version: 4.9.3
-  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 67ca21a387c0572f1c04936e638dde7782c5aa520c3754aadc7cc9b7c915da9ebc3e27c601bfff4ccb7d7264e82dce6d277ada82ec09dc75024349e0ef64926d
+  checksum: d7bdcf5e18193f709339540d69577f7b0389000265db2bf10edfaa67336a29d6bcbee11828084150f7fdd110d605794cfa6df33bebc0a2e33daad2dbe2a7a59f
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
   version: 5.1.3
-  resolution: "typescript@patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=d73830"
+  resolution: "typescript@patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 32a25b2e128a4616f999d4ee502aabb1525d5647bc8955e6edf05d7fbc53af8aa98252e2f6ba80bcedfc0260c982b885f3c09cfac8bb65d2924f3133ad1e1e62
+  checksum: 6f0a9dca6bf4ce9dcaf4e282aade55ef4c56ecb5fb98d0a4a5c0113398815aea66d871b5611e83353e5953a19ed9ef103cf5a76ac0f276d550d1e7cd5344f61e
   languageName: node
   linkType: hard
 
