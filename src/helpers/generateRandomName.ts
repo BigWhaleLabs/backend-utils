@@ -1,6 +1,6 @@
 import { colorDictionary, nounDictionary } from '@/data/nameDictionaries'
-import capitalizeFirstLetter from '@/helpers/capitalizeFirstLetter'
 import { createHash } from 'crypto'
+import capitalizeFirstLetter from '@/helpers/capitalizeFirstLetter'
 
 export default function generateRandomName(address: string) {
   const hashed = createHash('sha256').update(address).digest('hex')
