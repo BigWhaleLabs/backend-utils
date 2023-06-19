@@ -20,7 +20,7 @@
     "yarn": false
   },
   "scripts": {
-    "release": "np",
+    "release": "np --any-branch",
     "prepare": "ts-patch install -s",
     "start": "yarn prepare && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
     "build": "yarn prepare && tsc --skipLibCheck",
